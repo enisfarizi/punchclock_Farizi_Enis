@@ -8,6 +8,7 @@ import java.util.List;
 
 @Service
 public class EntryService {
+
     private EntryRepository entryRepository;
 
     public EntryService(EntryRepository entryRepository) {
