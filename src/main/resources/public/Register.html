@@ -1,25 +1,31 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
     <meta charset="UTF-8">
     <title>Register</title>
-    <script src="register.js" type="application/javascript"></script>
+    <script src="Register.js" type="application/javascript"></script>
 </head>
 <body>
+<h2>Register Page</h2><br>
 <form id="registerForm">
-    <h1>Register</h1>
-    <p>Username:</p>
-    <input type="text" name="username" id="username" placeholder="Username">
+    <label><b>Username
+    </b>
+    </label>
+    <input type="text" name="Uname" id="Uname" placeholder="Username">
     <br><br>
-    <p>Password:</p>
-    <input type="password" name="password" id="password" placeholder="Password">
+    <label><b>Password
+    </b>
+    </label>
+    <input type="Password" name="Pass" id="Pass" placeholder="Password">
     <br><br>
-    <p>Confirm Password:</p>
-    <input type="password" name="confirmpassword" id="confirmpassword" placeholder="Confirm Password">
+    <label><b>Confirm Password
+    </b>
+    </label>
+    <input type="Password" name="confirmpassword" id="confirmpassword" placeholder="Confirm Password">
     <br><br>
+    <button type="submit">Create</button>
     <p style="color: red" id="error"></p>
     <p>Or <a href="http://localhost:8081/Login.html">log in</a></p>
-    <button type="submit">Create</button>
-</form>
+    </form>
 </body>
 </html>
