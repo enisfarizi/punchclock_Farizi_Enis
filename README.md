@@ -11,3 +11,13 @@ Folgende Schritte befolgen um loszulegen:
 Folgende Dienste stehen während der Ausführung im Profil `dev` zur Verfügung:
 - REST-Schnittstelle der Applikation: http://localhost:8081
 - Dashboard der H2 Datenbank: http://localhost:8081/h2-console
+
+## Beschreibung des Prgrammes
+Mit der Punch-Lcok Applikation kann man verschiedene User erstellen welche 
+dann auf verschiedene Categorys ihre Stunden verbuchen können.
+Man startet die App indem man in einem Browser folgende Links abruft:
+http://localhost:8081 
+http://localhost:8081/Login.html 
+http://localhost:8081/Register.html 
+Es sollte noch Implementiert werden mit einem einzigen Link alles abrufen 
+zu können solang man sich wie verlangt regsitriert oder anmeldet.
