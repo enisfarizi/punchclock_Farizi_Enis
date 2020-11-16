@@ -1,5 +1,6 @@
 package ch.zli.m223.punchclock.domain;
 
+import com.fasterxml.jackson.annotation.JsonBackReference;
 import com.fasterxml.jackson.databind.annotation.JsonDeserialize;
 import com.fasterxml.jackson.databind.annotation.JsonSerialize;
 import com.fasterxml.jackson.datatype.jsr310.deser.LocalDateTimeDeserializer;
@@ -7,6 +8,7 @@ import com.fasterxml.jackson.datatype.jsr310.ser.LocalDateTimeSerializer;
 
 import javax.persistence.*;
 import java.time.LocalDateTime;
+import java.util.Set;
 
 @Entity
 public class Category {
@@ -15,12 +17,11 @@ public class Category {
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
 
-    @Column(nullable = false)
     private String Category;
 
-    @Column(nullable = false)
     @OneToMany
-    private Entry entry;
+    @JsonBackReference
+    private Set<Entry> entries;
 
     public Long getId() {
         return id;
@@ -38,11 +39,12 @@ public class Category {
         Category = category;
     }
 
-    public Entry getEntry() {
-        return entry;
+    public Set<Entry> getEntries() {
+        return entries;
     }
 
-    public void setEntry(Entry entry) {
-        this.entry = entry;
+    public void setEntries(Set<Entry> entries) {
+        this.entries = entries;
     }
 }
+

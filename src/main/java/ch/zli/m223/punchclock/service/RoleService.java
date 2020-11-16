@@ -2,7 +2,7 @@ package ch.zli.m223.punchclock.service;
 
 import ch.zli.m223.punchclock.domain.Role;
 import ch.zli.m223.punchclock.repository.RoleRepository;
-import org.jvnet.hk2.annotations.Service;
+import org.springframework.stereotype.Service;
 
 @Service
 public class RoleService {

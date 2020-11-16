@@ -16,10 +16,8 @@ public class Role {
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
 
-    @Column(nullable = false)
     private String role;
 
-    @Column(nullable = false)
     @OneToMany
     private Set<User> user;
 

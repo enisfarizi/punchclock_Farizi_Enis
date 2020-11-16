@@ -4,7 +4,7 @@ import ch.zli.m223.punchclock.domain.Category;
 import ch.zli.m223.punchclock.domain.Entry;
 import ch.zli.m223.punchclock.domain.Role;
 import ch.zli.m223.punchclock.repository.CategoryRepository;
-import org.jvnet.hk2.annotations.Service;
+import org.springframework.stereotype.Service;
 
 import java.util.List;
 
